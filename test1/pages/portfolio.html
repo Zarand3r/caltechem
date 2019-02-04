@@ -6,44 +6,36 @@
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="../css/stylesheet1.css">
+      <link rel="stylesheet" type="text/css" href="../css/basic.css">
     </head>
     <body>
-      <header class = "nav-down">
+      <header class = "nav-down" style="z-index: 1000;">
         <nav class="navbar navbar-expand-md">
-          <a class="navbar-brand text-info" href="#">Jeffin Studios</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsetarget" aria-controls="collapsetarget" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="collapsetarget">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="pages/products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-md-0">
-              <input class="form-control" type="text" placeholder="Search">
-            </form>
+          <div id="linkcontainer">
+            <a class="navbar-brand text-info" href="#">Caltech E&M</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsetarget" aria-controls="collapsetarget" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsetarget">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
        </header>
+       <canvas id="canvas"></canvas>
         <div class = "rigidSection">
           <div id = "productcover"></div>
           <div class = "content">
@@ -57,16 +49,193 @@
             Link to research papers?
           </div>
         </div>
-        <div class = "rigidSection">
-          <div class = "content">
+        <div class="stiffSection">
+        <h1>My Projects</h1>
+        <div class = "content">
+          <h1>Machine Learning</h1>
+          <div class="grid main-container">
+             <div class="row">
+                 <div class="cell">
+                     <a href="https://github.com/Jeffin-Studios/stocktool" style="color: #fff; text-decoration: none;">
+                         <div style="background-image: url(../images/stocktool2.png); background-size:cover;" class="panel panel-default">
+                             <div class="panel-body"><h1>Stocktool</h1></div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="cell">
+                     <a href="https://github.com/Jeffin-Studios/insight" style="color: #fff; text-decoration: none;">
+                         <div style="background-image: url(../images/insight.png); background-size:cover;" class="panel panel-default">
+                             <div class="panel-body"><h1>Insight</h1></div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="cell">
+                     <a href="https://github.com/Jeffin-Studios/veritas" style="color: #fff; text-decoration: none;">
+                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                             <div class="panel-body"><h1>Veritas</h1></div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="cell">
+                     <a href="https://github.com/Jeffin-Studios/amazon" style="color: #fff; text-decoration: none;">
+                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                             <div class="panel-body"><h1>Amazon</h1></div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="cell">
+                     <a href="https://github.com/Jeffin-Studios/diagnose" style="color: #fff; text-decoration: none;">
+                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                             <div class="panel-body"><h1>Diagnose</h1></div>
+                         </div>
+                     </a>
+                 </div>
+                 <div class="cell">
+                     <a href="https://github.com/Jeffin-Studios/pokedex" style="color: #fff; text-decoration: none;">
+                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                             <div class="panel-body"><h1>Pokedex</h1></div>
+                         </div>
+                     </a>
+                 </div>
+             </div>
+           </div>
+        </div>
 
+        <div class = "content">
+         <h1>Computer Vision</h1>
+         <div class="grid main-container">
+            <div class="row">
+                <div class="cell">
+                    <a href="https://github.com/Jeffin-Studios/segmentation" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>Segmentation</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell">
+                    <a href="https://github.com/Jeffin-Studios/tracker" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>Tracker</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell">
+                    <a href="#" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>???</h1></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
           </div>
         </div>
+
+        <div class = "content">
+        <h1>Swift Apps</h1>
+        <div class="grid main-container">
+           <div class="row">
+               <div class="cell">
+                   <a href="#" style="color: #fff; text-decoration: none;">
+                       <div style="background-image: url(../images/stocktool.png); background-size:cover;" class="panel panel-default">
+                           <div class="panel-body"><h1>Stocktool</h1></div>
+                       </div>
+                   </a>
+               </div>
+               <div class="cell">
+                   <a href="#" style="color: #fff; text-decoration: none;">
+                       <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
+                           <div class="panel-body"><h1>Phaser Tanks</h1></div>
+                       </div>
+                   </a>
+               </div>
+               <div class="cell">
+                   <a href="#" style="color: #fff; text-decoration: none;">
+                       <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                           <div class="panel-body"><h1>stocktool</h1></div>
+                       </div>
+                   </a>
+               </div>
+           </div>
+         </div>
+        </div>
+
+        <div class = "content">
+         <h1>Web Apps</h1>
+         <div class="grid main-container">
+            <div class="row">
+                <div class="cell">
+                    <a href="https://phasertanksio.herokuapp.com/" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>Tank.io</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell">
+                    <a href="https://flightio.herokuapp.com/" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>Flight.io</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell">
+                    <a href="https://strokesoflight.herokuapp.com/" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/strokesoflight.png); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>Strokes Of Light</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell">
+                    <a href="https://zarand3r.github.io/donut-challenge/" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/rainoffire.png); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>Rain of Fire</h1></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cell">
+                    <a href="https://basisinquirer.herokuapp.com/" style="color: #fff; text-decoration: none;">
+                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                            <div class="panel-body"><h1>BASIS Inquirer</h1></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "content">
+        <h1>Other Projects</h1>
+        <div class="grid main-container">
+           <div class="row">
+               <div class="cell">
+                   <a href="#" style="color: #fff; text-decoration: none;">
+                       <div style="background-image: url(../images/stocktool.png); background-size:cover;" class="panel panel-default">
+                           <div class="panel-body"><h1>stocktool</h1></div>
+                       </div>
+                   </a>
+               </div>
+               <div class="cell">
+                   <a href="#" style="color: #fff; text-decoration: none;">
+                       <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
+                           <div class="panel-body"><h1>Phaser Tanks</h1></div>
+                       </div>
+                   </a>
+               </div>
+               <div class="cell">
+                   <a href="#" style="color: #fff; text-decoration: none;">
+                       <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                           <div class="panel-body"><h1>stocktool</h1></div>
+                       </div>
+                   </a>
+               </div>
+           </div>
+         </div>
+        </div>
+      </div>
         <footer id="myFooter">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                        <h2 class="logo"><a href="#"> Jeffin </a></h2>
+                        <h2 class="logo"><a href="#"> Richard </a></h2>
                     </div>
                     <div class="col-sm-2">
                         <h5>Get started</h5>
@@ -95,7 +264,7 @@
                     <div class="col-sm-3">
                         <div class="social-networks">
                             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/richard.bao.108" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                             <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
                         </div>
                         <button type="button" class="btn btn-default">Contact us</button>
@@ -103,11 +272,14 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>© 2018 Copyright Jeffin Studios </p>
+                <p>© 2018 Copyright Jeffin Enterprises </p>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../js/responsive.js"></script>
+        <script type="text/javascript" src="../js/dots.js"></script>
+
+        </script>
   </body>
 </html>

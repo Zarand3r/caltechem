@@ -1,0 +1,14 @@
+html, body {
+	font-family: 'Play', sans-serif;
+	/* background: #2b2b2b; */
+	background: steelblue;
+	margin: 0;
+}
+
+#title	{
+	position: absolute;
+	font-size: 120px;
+  top: 20%;
+  left: 20%;
+  transform: translate(-20%, -20%);
+}
