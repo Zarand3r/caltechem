@@ -5,12 +5,13 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="../css/stylesheet1.css">
-      <link rel="stylesheet" type="text/css" href="../css/basic.css">
+      <link rel="stylesheet" type="text/css" href="../css/externals.css" />
+      <link rel="stylesheet" type="text/css" href="../css/partials.css" />
+
     </head>
     <body>
       <header class = "nav-down" style="z-index: 1000;">
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md" style = "opacity: 0.9;">
           <div id="linkcontainer">
             <a class="navbar-brand text-info" href="#">Caltech E&M</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsetarget" aria-controls="collapsetarget" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,16 +20,19 @@
             <div class="collapse navbar-collapse" id="collapsetarget">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="portfolio.html">Projects</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="blog.html">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
+                  <a class="nav-link" href="">Sponsorship</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Contact</a>
                 </li>
               </ul>
             </div>
@@ -37,62 +41,55 @@
        </header>
        <canvas id="canvas"></canvas>
         <div class = "rigidSection">
-          <div id = "productcover"></div>
+          <div id = "portfoliocover"></div>
           <div class = "content">
-            Cover photo doesnt go all the way down. The remaining blank space is a brief introductory description of what I research
-          </div>
-        </div>
-        <div class = "rigidSection">
-          <h1>Project 1</h1>
-          <div class = "content">
-            Each section is a research project. For each research project, write a lengthy description discussing what was done and the significance
-            Link to research papers?
+            Cover photo doesnt go all the way down.
           </div>
         </div>
         <div class="stiffSection">
-        <h1>My Projects</h1>
+        <h1>Our Projects</h1>
         <div class = "content">
-          <h1>Machine Learning</h1>
+          <h1>Entrepeneurial</h1>
           <div class="grid main-container">
              <div class="row">
                  <div class="cell">
                      <a href="https://github.com/Jeffin-Studios/stocktool" style="color: #fff; text-decoration: none;">
-                         <div style="background-image: url(../images/stocktool2.png); background-size:cover;" class="panel panel-default">
+                         <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                              <div class="panel-body"><h1>Stocktool</h1></div>
                          </div>
                      </a>
                  </div>
                  <div class="cell">
                      <a href="https://github.com/Jeffin-Studios/insight" style="color: #fff; text-decoration: none;">
-                         <div style="background-image: url(../images/insight.png); background-size:cover;" class="panel panel-default">
+                         <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                              <div class="panel-body"><h1>Insight</h1></div>
                          </div>
                      </a>
                  </div>
                  <div class="cell">
                      <a href="https://github.com/Jeffin-Studios/veritas" style="color: #fff; text-decoration: none;">
-                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                         <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                              <div class="panel-body"><h1>Veritas</h1></div>
                          </div>
                      </a>
                  </div>
                  <div class="cell">
                      <a href="https://github.com/Jeffin-Studios/amazon" style="color: #fff; text-decoration: none;">
-                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                         <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                              <div class="panel-body"><h1>Amazon</h1></div>
                          </div>
                      </a>
                  </div>
                  <div class="cell">
                      <a href="https://github.com/Jeffin-Studios/diagnose" style="color: #fff; text-decoration: none;">
-                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                         <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                              <div class="panel-body"><h1>Diagnose</h1></div>
                          </div>
                      </a>
                  </div>
                  <div class="cell">
                      <a href="https://github.com/Jeffin-Studios/pokedex" style="color: #fff; text-decoration: none;">
-                         <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                         <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                              <div class="panel-body"><h1>Pokedex</h1></div>
                          </div>
                      </a>
@@ -102,127 +99,26 @@
         </div>
 
         <div class = "content">
-         <h1>Computer Vision</h1>
-         <div class="grid main-container">
-            <div class="row">
-                <div class="cell">
-                    <a href="https://github.com/Jeffin-Studios/segmentation" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>Segmentation</h1></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="https://github.com/Jeffin-Studios/tracker" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>Tracker</h1></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="#" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>???</h1></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class = "content">
-        <h1>Swift Apps</h1>
+        <h1>Social Media Marketing</h1>
         <div class="grid main-container">
            <div class="row">
                <div class="cell">
                    <a href="#" style="color: #fff; text-decoration: none;">
-                       <div style="background-image: url(../images/stocktool.png); background-size:cover;" class="panel panel-default">
-                           <div class="panel-body"><h1>Stocktool</h1></div>
-                       </div>
-                   </a>
-               </div>
-               <div class="cell">
-                   <a href="#" style="color: #fff; text-decoration: none;">
-                       <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
-                           <div class="panel-body"><h1>Phaser Tanks</h1></div>
-                       </div>
-                   </a>
-               </div>
-               <div class="cell">
-                   <a href="#" style="color: #fff; text-decoration: none;">
-                       <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
-                           <div class="panel-body"><h1>stocktool</h1></div>
-                       </div>
-                   </a>
-               </div>
-           </div>
-         </div>
-        </div>
-
-        <div class = "content">
-         <h1>Web Apps</h1>
-         <div class="grid main-container">
-            <div class="row">
-                <div class="cell">
-                    <a href="https://phasertanksio.herokuapp.com/" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>Tank.io</h1></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="https://flightio.herokuapp.com/" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>Flight.io</h1></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="https://strokesoflight.herokuapp.com/" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/strokesoflight.png); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>Strokes Of Light</h1></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="https://zarand3r.github.io/donut-challenge/" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/rainoffire.png); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>Rain of Fire</h1></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cell">
-                    <a href="https://basisinquirer.herokuapp.com/" style="color: #fff; text-decoration: none;">
-                        <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
-                            <div class="panel-body"><h1>BASIS Inquirer</h1></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-          </div>
-        </div>
-
-        <div class = "content">
-        <h1>Other Projects</h1>
-        <div class="grid main-container">
-           <div class="row">
-               <div class="cell">
-                   <a href="#" style="color: #fff; text-decoration: none;">
-                       <div style="background-image: url(../images/stocktool.png); background-size:cover;" class="panel panel-default">
+                       <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                            <div class="panel-body"><h1>stocktool</h1></div>
                        </div>
                    </a>
                </div>
                <div class="cell">
                    <a href="#" style="color: #fff; text-decoration: none;">
-                       <div style="background-image: url(../images/phasertanks.png); background-size:cover;" class="panel panel-default">
+                       <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                            <div class="panel-body"><h1>Phaser Tanks</h1></div>
                        </div>
                    </a>
                </div>
                <div class="cell">
                    <a href="#" style="color: #fff; text-decoration: none;">
-                       <div style="background-image: url(../images/cover.jpg); background-size:cover;" class="panel panel-default">
+                       <div style="background-image: url(../images/lightbulb.jpg); background-size:cover;" class="panel panel-default">
                            <div class="panel-body"><h1>stocktool</h1></div>
                        </div>
                    </a>
@@ -235,7 +131,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                        <h2 class="logo"><a href="#"> Richard </a></h2>
+                        <h2 class="logo"><a href="#"> LOGO </a></h2>
                     </div>
                     <div class="col-sm-2">
                         <h5>Get started</h5>
@@ -272,14 +168,13 @@
                 </div>
             </div>
             <div class="footer-copyright">
-                <p>© 2018 Copyright Jeffin Enterprises </p>
+                <p>© 2019 Copyright Caltech E&M </p>
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../js/responsive.js"></script>
         <script type="text/javascript" src="../js/dots.js"></script>
-
         </script>
   </body>
 </html>

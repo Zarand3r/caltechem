@@ -11,7 +11,7 @@
 // Hide Header on on scroll down
 
 $('#fullpage').fullpage({
-  sectionsColor: ['#f2f2f2', 'lightskyblue', '#AFEEEE'],
+  sectionsColor: ['lightskyblue', '#f2f2f2', '#AFEEEE', 'lightskyblue', 'cornflowerblue'],
   //options here
   autoScrolling:true,
   scrollOverflow:true,
