@@ -75,28 +75,34 @@ body{
 } */
 
 
-.section{
+.section  {
 	text-align:center;
 }
 .section h1 {
-  margin-top: 50px;
-  font-size: 6em;
+  margin-top: 60px;
 }
 
-#portfolio  {
-  padding-top:50px;
-}
 .content p {
 	margin: 50px 50px 50px 50px;
   font-size: 2em;
   font-family: "Open Sans";
 }
-
-#cover {
-  background: url(../images/wallpaper.jpg);
+#ghost  {
+  position:absolute;
+  height:100vh;
+  width:100%;
+  background:url("../images/wallpaper4.png");
   background-size: cover;
   background-repeat:   no-repeat;
   background-position: center center;
+}
+
+#cover {
+  background: url("../images/wallpaper.png");
+  background-size: cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+  font-size: 6em;
 }
 
 #screen {
@@ -105,7 +111,7 @@ body{
   height: 100%;
   width: 100%;
   background: black;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 #covertitle {
@@ -113,8 +119,51 @@ body{
   z-index: 1000;
   left: 0;
   right: 0;
-  top: 36%;
+  top: 30%;
   text-align: center;
+}
+
+#featured  {
+  padding-top:50px;
+}
+
+.slidertitle  {
+  position: absolute;
+  width: 100%;
+  color:white;
+  padding-top: 52px;
+  padding-bottom: 20px;
+  border-bottom: 6px solid #003366;
+  font-size: 50px;
+}
+
+.slide  {
+  position: relative;
+}
+
+.slidecover {
+  /* margin-top: 50px; */
+  position: absolute;
+  top:153px;
+  height:100%;
+  width: 100%;
+  background: whitesmoke;
+}
+
+
+.slidedescription {
+  background: lightgray;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 153px;
+  /* bottom:0; */
+}
+
+.slidedescription h1  {
+  width: 100%;
+  color: black;
 }
 
 .rigidSection {
@@ -132,13 +181,21 @@ body{
 }
 
 .rigidSection:nth-child(even) {
-    background-color: white;
+  background-color: white;
 }
 
 .rigidSection:nth-child(1) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
+.sectiontitle {
+  /* background: #003366; */
+  /* opacity: 0.6; */
+  padding-bottom: 20px;
+  /* border-top: 6px solid whitesmoke; */
+  border-bottom: 6px solid #003366;
+  font-size: 50px;
+}
 
 .content {
   -webkit-transition-duration: 4s;
@@ -152,7 +209,9 @@ body{
   padding-bottom: 50px;
   font-size: 1em;
   margin: 0 auto;
-  height: 80%;
+  height: 80vh;
+  /* background: #A5FBC6; */
+  background: whitesmoke;
 }
 
 .content p {
@@ -168,17 +227,31 @@ body{
 .content h1,h2,h3,h4,h5,h6{
     margin:0 auto;
 }
-
+.content .text  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:80%;
+}
 .content .text h3 {
     color: #333333;
 }
 
 .content .text p {
-    color: steelblue;
+    /* color: steelblue; */
+    margin:0 auto;
     font-size:20px;
 }
 
-.slidecover {
-  height:100%;
-  width: 100%
+.section:nth-child(2n+3)  {
+  opacity: 0.95;
 }
+
+/* .section:nth-last-child()  {
+  opacity: 0;
+} */
+
+/* .section:nth-child(6)  {
+  opacity: 0;
+} */

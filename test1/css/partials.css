@@ -11,8 +11,8 @@ header {
 }
 
 .navbar {
-  background-color: whitesmoke;
-  opacity: 0.7;
+  background-color:  whitesmoke;
+  opacity: 0.8;
   padding-bottom: 0;
   padding-top: 0;
   box-shadow: 0 4px 2px -2px lightgray inset;
@@ -22,13 +22,17 @@ header {
 
 #linkcontainer  {
   width: 100%;
-  text-align: left;
+}
+
+.navbar-nav {
+  margin-left: 0;
+  text-align: center;
 }
 
 .navbar-brand {
   font-size: 30px;
   padding: 0;
-  /* padding-bottom: 5px; */
+  padding-bottom: 8px;
   float: left;
   margin-right: -1em;
 }
@@ -36,9 +40,13 @@ header {
 .collapse {
   padding: 0;
   float:right;
-  text-align: right;
+  /* margin-right: 30% auto; */
+  /* text-align: right; */
 }
 
+#collapsetarget {
+  text-align: center;
+}
 
 .nav-link:hover {
   color: #0099FF;
@@ -46,7 +54,7 @@ header {
 
 .nav-link {
   color: gray;
-  font-size: 20px;
+  font-size: 22px;
   box-sizing: border-box;
   border-bottom: 4px solid transparent;
   padding-left: 10px;
